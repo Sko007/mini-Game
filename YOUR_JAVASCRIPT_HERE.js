@@ -48,6 +48,8 @@ function pickUpItem(person, weapon) {
     const inventory = person.inventory;
     inventory.push(weapon);
 
+    alert("You picked up a " + weapon)
+
 }
 
 function equipWeapon(person) {
