@@ -1,0 +1,51 @@
+body{
+   display:block;
+   background-color: darkslategrey;
+
+}
+
+main{
+
+    display:flex;
+    justify-content: center;
+
+}
+#stats{
+
+    display:flex;
+    flex-direction: row;
+}
+
+#dagger {
+    width: 10%;;
+    height:100px;
+
+
+}
+
+#inn{
+    width:10%;
+    height:100px;
+}
+
+
+#bag{
+width:10%;
+height:100px;
+
+}
+
+#parent{
+    background-color:red;
+}
+
+.sec{
+
+    background-color: cadetblue;
+}
+
+#axe{
+
+    width: 10%;
+    height:100px;
+}

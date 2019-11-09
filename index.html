@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+
+  <main>
+  <!-- 👍 YOUR HTML HERE 👍 -->
+
+  <div id="pictures">
+  <img id="inn" src="heart.png" onclick="restoreHealth();"/>
+  <img id="dagger" src="dagger.jpg" onclick="clickDagger();"/>
+  <img id="bag" src="square.jpg" onclick="clickBag();"/>
+  </div>
+
+
+  <!--make stats visable-->
+  <div id="stats">
+  <button id="showStats" onclick="showStats1();">showStats</button>
+  <button id="showWeapons" onclick="showWeapon();">showWeapon</button>
+  <button id="showInventory" onclick="showInventory();">showInventory</button>
+  </div>
+
+<!--Output-dives-->
+ 
+
+</main>
+<div id="outputs">
+  <div id="parent"></div>
+  <div id="parent1"></div>
+  <div id="parent2"></div>
+  </div>
+  <!--random Item-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+
+
+  <img id="axe" src="axe.jpg" onclick="pickUpItem();"/>
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
